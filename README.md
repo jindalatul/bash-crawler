@@ -1,1 +1,2 @@
 # bash-crawler
+This script is written in bash shell script, and this reads standard XML sitemap file line by line, extract url and make CURL based HTTP request to web host. The advantage of this scrpit is on CMS based websites having thousands of web pages, where most of the pages remain unchanged. So crawler reads every webpage and builds internal cache. Helps in performance of CMS driven websites.
