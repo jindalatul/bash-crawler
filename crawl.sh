@@ -9,7 +9,7 @@ today="$(date)"
 echo "<?xml version='1.0' encoding='us-ascii'?>" >> logs.xml
 
 echo "<cron start='$today'>" >>  logs.xml
-
+ 
 urls=$(curl -s $host/sitemap.xml  --insecure  | grep "<loc>" | awk -F"<loc>" '{print $2} ' | awk -F"</loc>" '{print $1}')
 for i in $urls 
 do
